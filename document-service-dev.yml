@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: document-service
+  r2dbc:
+    url: r2dbc:postgresql://192.168.1.100:5432/HFG?schema=public
+    username: postgres
+    password: postgres123 
+    properties:
+      schema: public
+  profiles:
+    active:
+      - dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka
+  instance:
+    preferIpAddress: true
+name-contracts-api: CONTRACT-SERVICE

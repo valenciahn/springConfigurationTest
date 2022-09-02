@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: contract-service
+  r2dbc:
+    url: r2dbc:postgresql://192.168.1.100:5432/HFG?schema=public
+    username: postgres
+    password: postgres123
+  profiles:
+    active:
+      - dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka
+  instance:
+    preferIpAddress: true
+#Turn Statistics on
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org.springframework: info
+    org.hibernate: debug
+    org.hibernate.type: trace
+    org.hibernate.stat: debug
