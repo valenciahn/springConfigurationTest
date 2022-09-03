@@ -5,9 +5,6 @@ spring:
     url: r2dbc:postgresql://192.168.1.100:5432/HFG?schema=public
     username: postgres
     password: postgres123
-  profiles:
-    active:
-      - dev
 eureka:
   client:
     service-url:
