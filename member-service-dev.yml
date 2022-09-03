@@ -1,6 +1,6 @@
 spring:
   application:
-    name: member_service
+    name: member-service
   r2dbc:
     url: r2dbc:postgresql://192.168.1.100:5432/HFG?schema=public
     username: postgres
