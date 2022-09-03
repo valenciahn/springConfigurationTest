@@ -7,9 +7,6 @@ spring:
     password: postgres123 
     properties:
       schema: public
-  profiles:
-    active:
-      - dev
 eureka:
   client:
     service-url:
