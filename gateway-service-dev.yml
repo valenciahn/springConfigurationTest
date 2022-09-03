@@ -22,9 +22,6 @@ spring:
         - Path=/document-service/api/v1/**
         filters:
         - RewritePath=/document-service/api/v1/(?<path>.*), /documents/v1/$\{path}
-  profiles:
-    active:
-    - dev
 eureka:
   client:
     service-url:
