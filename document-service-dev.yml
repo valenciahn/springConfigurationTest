@@ -2,7 +2,7 @@ spring:
   application:
     name: document-service
   r2dbc:
-    url: r2dbc:postgresql://192.168.1.100:5432/HFG?schema=hfg
+    url: r2dbc:postgresql://{server}:5432/HFG?schema=hfg
     username: postgres
     password: postgres123 
     properties:
